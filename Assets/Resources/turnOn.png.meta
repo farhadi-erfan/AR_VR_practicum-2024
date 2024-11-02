@@ -66,7 +66,7 @@ TextureImporter:
       213: -2811630013077575617
     second: turnOn_20
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -87,6 +87,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -125,6 +126,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -616,6 +618,28 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      turnOn_0: -6456752078524866576
+      turnOn_1: -3545139023687193274
+      turnOn_10: -3782688026078733829
+      turnOn_11: -230874684483829727
+      turnOn_12: 3643901010312992829
+      turnOn_13: -3126945561005378486
+      turnOn_14: -8585818224907797595
+      turnOn_15: 8576192194147439269
+      turnOn_16: -7156885510927431363
+      turnOn_17: 2058768971975511398
+      turnOn_18: 7303503542933148956
+      turnOn_19: 165111651148698450
+      turnOn_2: 617485836418359293
+      turnOn_20: -2811630013077575617
+      turnOn_3: 5064817442419432684
+      turnOn_4: 7505144107825734744
+      turnOn_5: -1298621736569798096
+      turnOn_6: -2627556104015460022
+      turnOn_7: 5427806332942616486
+      turnOn_8: 3679684312225124213
+      turnOn_9: -177439886455135266
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,0 +1,5 @@
+C:/Users/efarhadi/Desktop/AR_VR_practicum-2024/.utmp/RelWithDebInfo/a4xx949a/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/efarhadi/Desktop/AR_VR_practicum-2024/.utmp/RelWithDebInfo/a4xx949a/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Users/efarhadi/Desktop/AR_VR_practicum-2024/.utmp/RelWithDebInfo/a4xx949a/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+C:/Users/efarhadi/Desktop/AR_VR_practicum-2024/.utmp/RelWithDebInfo/a4xx949a/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+C:/Users/efarhadi/Desktop/AR_VR_practicum-2024/.utmp/RelWithDebInfo/a4xx949a/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir

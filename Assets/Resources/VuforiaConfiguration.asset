@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -2067402452, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Script: {fileID: -2067402452, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: AfsotOj/////AAABmRcr218FSkQOirdOEqm0KH5YA9FA9Huahdq4W4azmmrXufzFkiGpwLBVFFJN6Q4TSY9pde/CXmVLQGefNbBzVDFduMhSrkqlJZgQagQjeVmggAcD4j97ZKz3xIQb9CJwiz3L6zDVSTDPX3qo3hnPxUPYyNWoXZmqcBZdfPHzfXH8yB+hxRvcXpnfkDzTlkeBUKMc5SFxGCYrPn0LZvGegfYSzBX8v+HliKfX7iWeJYfo4LXCgaQ3tMR65C8HCKOT/GqqsBzAHrfOjLLmUsubofYWPjIbRtkkssTKxz+X1UGUDdWTyYxa2Y3iMXh9F9CzZ5enZswoeRxw3zXQiPvA2Y8tvMvnjSZNP8ed+viGJX78
-    ufoLicenseKey: QVUvemplLy8vLy8vQUFBQUtJK2J3amJnNlU1VnZWcE5VRXdyNGk1S2hjVEUwZExremdZUzZhRE1NNURVN1hmN1ZYWVJ4ZkQ1c0ROZFFPSkhlZ3FzSzNZWmRqN1d3VlY1RjZFS0ZWbWpLd3pDQWFMNU0zREVkZitNMytUQ05vUHlIQkJJbC9xa25vby95bFR6R3ZScUh2YUhyZUdiNCsrdU4rVW9sR1Nyc1crbGFJbHBCQ2hSYVQ3aWV6c0F4dzd6bW1BNEpSVXdhZ2JZRkJQbGo2YWY1VlVGOXdFRWdxcVlydU9PeGJiekZ3a0lFY2F0Q05YaHQvaGg2djJkRjQzbUU2WWkxRkxObjc5ajJ2YWM5RWlkbG04NjR6dXlmYU1lUVRCSW9MZ0NzY0xFWVpiS2R4YVJHN3dnb2xkQXQ3MzdFQXFIcVVLK0RMTVBCS3hxcnpVN0NGcnBtYzdheXlOUjMwbk54bTVKWHBxNEFyeWNEQnlZSE41bjFRSUs=
+    vuforiaLicenseKey: 
+    ufoLicenseKey: QVdmYVhEMy8vLy8vQUFBQUtEelVnZ2hWUzBGRG1UcnQ3YThmQWVJcGN1OHdFSlE4c1EwZHpjUE9OUXFKc0o5YndHYy8rY3VidFF3U1BvTTNBcWxpdjd2VHRWWDF4N3dmSll5Q3hrMFZ6R2xyRE5EQk9DbzhlZFFsU0t3T2JscGxZSGQ0a3NWNW1HbnNmdkpHSGtIQ1ArVjdTOEhORU1zRVlJR201eUNGL01oYnZtd1JjT2lyWElqVkZhaTJialZyTHNsMWcvWlc5TEVGNmczd2hVTlE0ZjV6UlJoZnRaNGRkN29WNDRGcXpCNWFKRHMreXBpaDFkRkRRZytXbzRwVHJDNFpHckY4Mmt2allIUHZjK0JnU2JrOWNtSG9lekFhcUpPVEhZNUczemNaN1BncjBGeE1jQlpLeUNORVRoekZVR3Q5OURsTlJvWFlFSjRUTThnZmFBdXR5c3BpSzQzdlFOQzllUjVWMVVSSE5LeHdxTUhvR3owZ2VHRVU=
     delayedInitialization: 0
     cameraFocusModeSetting: 2
     cameraDeviceModeSetting: -1
@@ -24,7 +24,7 @@ MonoBehaviour:
     shareRecordingsInITunes: 0
     logLevel: 0
     version: 10.18.4
-    eulaAcceptedVersions: '{"Values":["10.18","0.0","10.19"]}'
+    eulaAcceptedVersions: '{"Values":["10.18"]}'
   database:
     disableModelExtraction: 0
   shaders:
@@ -43,8 +43,8 @@ MonoBehaviour:
     thirdPartyARCoreClientDetected: 1
   playmode:
     mRecordingPath: 
-    playModeType: 1
+    playModeType: 0
   webcam:
     renderTextureLayer: 30
   packageInformation:
-    ARFoundationVersion: 
+    ARFoundationVersion: 5.1.2

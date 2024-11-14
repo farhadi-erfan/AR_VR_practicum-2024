@@ -17,7 +17,16 @@ public class SimpleBarcodeScanner : MonoBehaviour
     {
         if (mBarcodeBehaviour != null && mBarcodeBehaviour.InstanceData != null)
         {
-            barcodeAsText.text = mBarcodeBehaviour.InstanceData.Text;
+            string barcode = mBarcodeBehaviour.InstanceData.Text.Trim();
+            Debug.Log(barcode);
+            if (barcode == "01212901") {
+                barcodeAsText.text = "Coke";
+            } else if (barcode == "some") {
+
+            } else {
+               barcodeAsText.text = mBarcodeBehaviour.InstanceData.Text; 
+            }
+            // barcodeAsText.text = mBarcodeBehaviour.InstanceData.Text;
         }
         else
         {

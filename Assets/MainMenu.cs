@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
 
     public void LoadSnaxRay()
     {
-        SceneManager.LoadSceneAsync("SnaxDetection");
+        SceneManager.LoadSceneAsync("Start Scene");
     }
     //Start Scene
     public void PlayGame()

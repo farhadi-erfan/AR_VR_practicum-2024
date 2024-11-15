@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Start Scene.unity
+    guid: 4dc2f4a8d33deef4dbb28c5577d482cd
+  - enabled: 1
     path: Assets/Scenes/SnaxDetection.unity
     guid: 3139b533fcce7684e911f5d3fe2f7558
   - enabled: 1

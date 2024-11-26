@@ -27,19 +27,19 @@ public class SimpleBarcodeScanner : MonoBehaviour
             Debug.Log($"Raw barcode: '{mBarcodeBehaviour.InstanceData.Text}'");
             Debug.Log($"Trimmed barcode: '{barcode}'");
 
-            if (barcode == "01212901") {
+            if (barcode == "028400356145") {
                     myImage.gameObject.SetActive(true);
-                    name1.text = "Coke";
+                    name1.text = "Cheetos";
+                    fat.text = "Fat : 28g";
+                    sodium.text = "Sodium : 560mg";
+                    sugar.text = "Sugar : 3g";
+                    myImage.gameObject.SetActive(true);
+            }else  if (barcode == "041420081217") {
+                    myImage.gameObject.SetActive(true);
+                    name1.text = "Juicy Burst";
                     fat.text = "Fat : 0g";
-                    sodium.text = "Sodium : 55mg";
-                    sugar.text = "Sugar : 69g";
-                    myImage.gameObject.SetActive(true);
-            }else  if (barcode == "3811") {
-                    myImage.gameObject.SetActive(true);
-                    name1.text = "Brad's Cookie Nook";
-                    fat.text = "Fat : 7.4g";
-                    sodium.text = "Sodium : 93mg";
-                    sugar.text = "Sugar : 9.9g";
+                    sodium.text = "Sodium : 70mg";
+                    sugar.text = "Sugar : 36g";
             } else if(barcode == "091752001001"){
                      name1.text = "BlueBerry Muffin";
                      fat.text = "Fat : 17g";

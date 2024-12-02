@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement; 
+using UnityEngine.SceneManagement;
 
 public class MenuSwitcher : MonoBehaviour
 {
@@ -52,12 +52,17 @@ public class MenuSwitcher : MonoBehaviour
     public void StartScanScene()
     {
         // Load the scan scene 
-        SceneManager.LoadScene("SnaxDetection"); 
+        SceneManager.LoadScene("SnaxDetection");
     }
 
     public void StartOptiDot()
     {
         // Load the scan scene 
-        SceneManager.LoadScene("Menu"); 
+        SceneManager.LoadScene("Menu");
+    }
+
+    public void PlayGame()
+    {
+        SceneManager.LoadScene("CustomersList");
     }
 }

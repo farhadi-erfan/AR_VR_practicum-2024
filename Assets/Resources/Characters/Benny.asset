@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d92cdd647eea4c34fb7f4d13ed352835, type: 3}
+  m_Name: Benny
+  m_EditorClassIdentifier: 
+  characterName: Benny The Biker
+  dialogue: "\"I\u2019m gearing up for a long ride and need a snack to fuel me up.
+    Something gluten-free would be perfect!\""
+  condition: Needs high-energy snacks but avoids gluten.
+  order: High energy gluten-free snack
+  sodiumTolerance: 0.65
+  sugarTolerance: 0.1
+  fatTolerance: 0.7
+  normalFace: {fileID: 21300000, guid: ff9ee04a8b3ffe540962edb3d3de227c, type: 3}
+  happyFace: {fileID: 21300000, guid: 3d6151c665dd1e444acb78195a034d60, type: 3}
+  sadFace: {fileID: 0}

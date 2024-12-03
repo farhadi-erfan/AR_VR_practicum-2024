@@ -18,7 +18,7 @@ MonoBehaviour:
   condition: Loves spicy snacks but can't handle anything sweet.
   order: 
   sodiumTolerance: 0
-  sugarTolerance: 0
+  sugarTolerance: 0.05
   fatTolerance: 0
   normalFace: {fileID: 21300000, guid: e933900ffe74e964f96a3798975f08f2, type: 3}
   happyFace: {fileID: 0}

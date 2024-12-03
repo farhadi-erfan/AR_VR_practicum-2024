@@ -204,6 +204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allSnacks:
   - {fileID: 11400000, guid: 26002c3f027d9b74bb3f255cf2723a06, type: 2}
+  - {fileID: 11400000, guid: ea3521fbba8ef51469339f651cb0397d, type: 2}
 --- !u!114 &68116311
 MonoBehaviour:
   m_ObjectHideFlags: 0

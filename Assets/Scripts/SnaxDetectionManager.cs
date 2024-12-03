@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class SnaxDetectionManager : MonoBehaviour
@@ -45,6 +46,10 @@ public class SnaxDetectionManager : MonoBehaviour
     public void buyClicked()
     {
         Debug.Log("Buy Clicked");
+        PlayerPrefs.SetString("CurrentCustomer", currentCustomer.characterName);
+        PlayerPrefs.SetString("CurrentSnackBarcode", currentSnack.barcode);
+        SceneManager.LoadScene("RewardScene");
+
     }
 
     public void pauseClicked()

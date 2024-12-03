@@ -28,9 +28,30 @@ public class CustomersListManager : MonoBehaviour
 
     void updateUI()
     {
-        setCurrentCustomer(characterManager.GetCharacterByName(currentCustomerName));
-        secondCustomerButton.GetComponent<Image>().sprite = characterManager.GetCharacterByName(secondCustomerName).normalFace;
-        thirdCustomerButton.GetComponent<Image>().sprite = characterManager.GetCharacterByName(thirdCustomerName).normalFace;
+        CharacterData customer = characterManager.GetCharacterByName(currentCustomerName);
+        CharacterData secondCharacter = characterManager.GetCharacterByName(secondCustomerName);
+        CharacterData thirdCharacter = characterManager.GetCharacterByName(thirdCustomerName);
+
+        if (characterManager.isCharacterCompleted(customer)) {
+            if (characterManager.isCharacterCompleted(secondCharacter))
+            {
+                if (characterManager.isCharacterCompleted(thirdCharacter))
+                {
+                    // TODO - Move to end page
+                }
+                else
+                {
+                    
+
+                }
+            }
+        }
+
+
+        setCurrentCustomer(customer);
+
+        secondCustomerButton.GetComponent<Image>().sprite = secondCharacter.normalFace;
+        thirdCustomerButton.GetComponent<Image>().sprite = thirdCharacter.normalFace;
     }
 
     // This method updates the UI with the selected character's information

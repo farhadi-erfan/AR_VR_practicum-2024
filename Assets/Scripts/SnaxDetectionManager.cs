@@ -54,7 +54,7 @@ public class SnaxDetectionManager : MonoBehaviour
 
     public void pauseClicked()
     {
-        Debug.Log("Pause Clicked");
+        SceneManager.LoadScene("CustomersList");
     }
 
     public void barcodeDetected(string barcode)

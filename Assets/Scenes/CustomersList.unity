@@ -153,7 +153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -90.55, y: 121}
+  m_AnchoredPosition: {x: -92.2, y: 167}
   m_SizeDelta: {x: 450, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &49320436
@@ -203,8 +203,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -289,8 +289,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -17.2, y: 30}
-  m_SizeDelta: {x: 600, y: 150}
+  m_AnchoredPosition: {x: -11.3604, y: 67.000015}
+  m_SizeDelta: {x: 611.6792, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &68937720
 MonoBehaviour:
@@ -341,8 +341,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 29
+  m_fontSizeBase: 29
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -418,17 +418,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 121485584}
-  m_LocalRotation: {x: -0, y: -0, z: -0.5386591, w: 0.8425239}
+  m_LocalRotation: {x: 0, y: 0, z: -0.55919296, w: 0.8290375}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1.2942, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1632613599}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -65.185}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -68}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 359, y: 105}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 385.7867, y: 136.60924}
+  m_SizeDelta: {x: 120.8801, y: 126.368}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &121485586
 MonoBehaviour:
@@ -666,12 +666,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1073913980}
+  m_Father: {fileID: 677175055}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 507, y: -139.5}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchoredPosition: {x: 485.00003, y: -201.00003}
+  m_SizeDelta: {x: 160, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &587846721
 MonoBehaviour:
@@ -717,7 +717,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1073913984}
+      - m_Target: {fileID: 1323181508}
         m_TargetAssemblyTypeName: CustomersListManager, Assembly-CSharp
         m_MethodName: thirdCustomerClicked
         m_Mode: 1
@@ -818,9 +818,9 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1080, y: 720}
+  m_ReferenceResolution: {x: 1280, y: 800}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -864,6 +864,9 @@ RectTransform:
   - {fileID: 1773742246}
   - {fileID: 1821262375}
   - {fileID: 1805419092}
+  - {fileID: 689416989}
+  - {fileID: 696829655}
+  - {fileID: 587846720}
   - {fileID: 1073913980}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 1, z: 0}
@@ -902,12 +905,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1073913980}
+  m_Father: {fileID: 677175055}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 482, y: 145}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: 433, y: 202}
+  m_SizeDelta: {x: 225, y: 225}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &689416990
 MonoBehaviour:
@@ -973,17 +976,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696829654}
-  m_LocalRotation: {x: -0.00028509347, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1073913980}
-  m_LocalEulerAnglesHint: {x: -0.033, y: 0, z: 0}
+  m_Father: {fileID: 677175055}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 507, y: -14}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchoredPosition: {x: 485.00003, y: -31.000023}
+  m_SizeDelta: {x: 160, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &696829656
 MonoBehaviour:
@@ -1029,7 +1032,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1073913984}
+      - m_Target: {fileID: 1323181508}
         m_TargetAssemblyTypeName: CustomersListManager, Assembly-CSharp
         m_MethodName: secondCustomerClicked
         m_Mode: 1
@@ -1113,8 +1116,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -17.2, y: -126.8}
-  m_SizeDelta: {x: 600, y: 100}
+  m_AnchoredPosition: {x: -11.36, y: -137.00003}
+  m_SizeDelta: {x: 611.68, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &720376505
 MonoBehaviour:
@@ -1164,8 +1167,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 29
+  m_fontSizeBase: 29
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1365,8 +1368,6 @@ GameObject:
   - component: {fileID: 1073913980}
   - component: {fileID: 1073913982}
   - component: {fileID: 1073913981}
-  - component: {fileID: 1073913983}
-  - component: {fileID: 1073913984}
   m_Layer: 5
   m_Name: DialogueBox
   m_TagString: Untagged
@@ -1386,19 +1387,16 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 689416989}
   - {fileID: 49320435}
   - {fileID: 68937719}
   - {fileID: 720376504}
-  - {fileID: 696829655}
-  - {fileID: 587846720}
   - {fileID: 1632613599}
   m_Father: {fileID: 677175055}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -57, y: 0}
-  m_SizeDelta: {x: 700, y: 320}
+  m_AnchoredPosition: {x: -129.99997, y: 15.124977}
+  m_SizeDelta: {x: 700, y: 450.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1073913981
 MonoBehaviour:
@@ -1438,40 +1436,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1073913979}
   m_CullTransparentMesh: 1
---- !u!114 &1073913983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1073913979}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab99258c8982f674eae59afc6f03c3c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allCharacters:
-  - {fileID: 11400000, guid: 5cca63273ea367246bd249e59ab897c5, type: 2}
-  - {fileID: 11400000, guid: 3ee81da7388ab2046a97af58d1ae71b8, type: 2}
-  - {fileID: 11400000, guid: 91020753a85fae14ca1cfe17c932aa5e, type: 2}
---- !u!114 &1073913984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1073913979}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474305f9e4eeaf442ba0f8dc00bed9f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterNameTMP: {fileID: 49320436}
-  dialogueTMP: {fileID: 68937720}
-  conditionTMP: {fileID: 720376505}
-  characterAvatar: {fileID: 0}
-  secondCustomerButton: {fileID: 696829654}
-  thirdCustomerButton: {fileID: 587846719}
 --- !u!1 &1176720384
 GameObject:
   m_ObjectHideFlags: 0
@@ -1619,6 +1583,8 @@ GameObject:
   - component: {fileID: 1323181506}
   - component: {fileID: 1323181505}
   - component: {fileID: 1323181504}
+  - component: {fileID: 1323181508}
+  - component: {fileID: 1323181507}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1676,6 +1642,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1323181507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323181503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab99258c8982f674eae59afc6f03c3c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allCharacters:
+  - {fileID: 11400000, guid: 5cca63273ea367246bd249e59ab897c5, type: 2}
+  - {fileID: 11400000, guid: 3ee81da7388ab2046a97af58d1ae71b8, type: 2}
+  - {fileID: 11400000, guid: 91020753a85fae14ca1cfe17c932aa5e, type: 2}
+--- !u!114 &1323181508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323181503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474305f9e4eeaf442ba0f8dc00bed9f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterNameTMP: {fileID: 49320436}
+  dialogueTMP: {fileID: 68937720}
+  conditionTMP: {fileID: 720376505}
+  characterAvatar: {fileID: 689416990}
+  secondCustomerButton: {fileID: 696829654}
+  thirdCustomerButton: {fileID: 587846719}
 --- !u!1 &1632613598
 GameObject:
   m_ObjectHideFlags: 0
@@ -1747,7 +1747,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -218, y: -68}
+  m_AnchoredPosition: {x: -218, y: -63.00003}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1767796432
@@ -1797,8 +1797,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 33
+  m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1883,8 +1883,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000095367, y: 0.00081635}
-  m_SizeDelta: {x: 1080, y: 509.1}
+  m_AnchoredPosition: {x: 0.00059509, y: -3.6942}
+  m_SizeDelta: {x: 1464.6, y: 1070.732}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1773742247
 MonoBehaviour:
@@ -1960,7 +1960,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -411, y: -213}
+  m_AnchoredPosition: {x: -480, y: -296}
   m_SizeDelta: {x: 225, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1805419093
@@ -2007,7 +2007,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1073913984}
+      - m_Target: {fileID: 1323181508}
         m_TargetAssemblyTypeName: CustomersListManager, Assembly-CSharp
         m_MethodName: startShopping
         m_Mode: 1
@@ -2093,7 +2093,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -487, y: 201}
+  m_AnchoredPosition: {x: -555, y: 312.08}
   m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1821262376

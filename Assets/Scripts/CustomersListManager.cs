@@ -15,43 +15,49 @@ public class CustomersListManager : MonoBehaviour
     public GameObject thirdCustomerButton;
     private CharacterManager characterManager;
 
-    string currentCustomerName = "Benny The Biker";
-    string secondCustomerName = "Sir Scorch the Dragon";
-    string thirdCustomerName = "Penelope the penguin";
+    CharacterData currentCustomer;
+    CharacterData secondCustomer;
+    CharacterData thirdCustomer;
 
 
     void Start()
     {
         characterManager = FindFirstObjectByType<CharacterManager>();
+        List<CharacterData> remaining = characterManager.getRemainingCharacters();
+        if (remaining.Count == 0)
+        {
+            // TODO goto end.
+            return;
+        }
+        else if (remaining.Count == 1)
+        {
+            secondCustomerButton.SetActive(false);
+            thirdCustomerButton.SetActive(false);
+        }
+        else if (remaining.Count == 2)
+        {
+            thirdCustomerButton.SetActive(false);
+            secondCustomer = remaining[1];
+        }
+        else
+        {
+            thirdCustomer = remaining[2];
+        }
+        currentCustomer = remaining[0];
         updateUI();
     }
 
     void updateUI()
     {
-        CharacterData customer = characterManager.GetCharacterByName(currentCustomerName);
-        CharacterData secondCharacter = characterManager.GetCharacterByName(secondCustomerName);
-        CharacterData thirdCharacter = characterManager.GetCharacterByName(thirdCustomerName);
-
-        if (characterManager.isCharacterCompleted(customer)) {
-            if (characterManager.isCharacterCompleted(secondCharacter))
-            {
-                if (characterManager.isCharacterCompleted(thirdCharacter))
-                {
-                    // TODO - Move to end page
-                }
-                else
-                {
-                    
-
-                }
-            }
+        setCurrentCustomer(currentCustomer);
+        if (secondCustomer != null)
+        {
+            secondCustomerButton.GetComponent<Image>().sprite = secondCustomer.normalFace;
         }
-
-
-        setCurrentCustomer(customer);
-
-        secondCustomerButton.GetComponent<Image>().sprite = secondCharacter.normalFace;
-        thirdCustomerButton.GetComponent<Image>().sprite = thirdCharacter.normalFace;
+        if (thirdCustomer != null)
+        {
+            thirdCustomerButton.GetComponent<Image>().sprite = thirdCustomer.normalFace;
+        }
     }
 
     // This method updates the UI with the selected character's information
@@ -64,23 +70,23 @@ public class CustomersListManager : MonoBehaviour
     }
     public void secondCustomerClicked()
     {
-        string temp = currentCustomerName;
-        currentCustomerName = secondCustomerName;
-        secondCustomerName = temp;
+        CharacterData temp = currentCustomer;
+        currentCustomer = secondCustomer;
+        secondCustomer = temp;
         updateUI();
     }
 
     public void thirdCustomerClicked()
     {
-        string temp = currentCustomerName;
-        currentCustomerName = thirdCustomerName;
-        thirdCustomerName = temp;
+        CharacterData temp = currentCustomer;
+        currentCustomer = thirdCustomer;
+        thirdCustomer = temp;
         updateUI();
     }
 
     public void startShopping()
     {
-        PlayerPrefs.SetString("CurrentCustomer", currentCustomerName);
+        PlayerPrefs.SetString("CurrentCustomer", currentCustomer.characterName);
         SceneManager.LoadScene("SnaxDetection");
     }
 

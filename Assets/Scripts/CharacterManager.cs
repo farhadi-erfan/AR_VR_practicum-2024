@@ -32,4 +32,16 @@ public class CharacterManager : MonoBehaviour
     {
         return completedCharacters.Contains(character.characterName);
     }
+
+    public List<CharacterData> getRemainingCharacters()
+    {
+        List<CharacterData> characterQueue = new List<CharacterData>();
+        foreach (var character in allCharacters)
+        {
+            if (!isCharacterCompleted(character)) {
+                characterQueue.Add(character);
+            }
+        }
+        return characterQueue;
+    }
 }

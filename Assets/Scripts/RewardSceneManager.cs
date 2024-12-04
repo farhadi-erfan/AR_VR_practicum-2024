@@ -3,12 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 
 public class RewardSceneManager : MonoBehaviour
 {
     public Image image;
     public TMP_Text feedbackDialogueTMP;
+    public TMP_Text notificationTextTMP;
+    public GameObject GoodImage;
+    public GameObject BadImage;
+    public GameObject NextBtn;
+    public GameObject RetryBtn;
+
     private SnackManager snackManager;
     private CharacterManager characterManager;
     SnackData currentSnack;
@@ -27,11 +35,20 @@ public class RewardSceneManager : MonoBehaviour
         currentCustomer = characterManager.GetCharacterByName(currentCustomerName);
         if (matches(currentSnack, currentCustomer))
         {
+            characterManager.setCompleted(currentCustomer);
             image.sprite = currentCustomer.happyFace;
+            feedbackDialogueTMP.text = currentCustomer.goodText;
+            notificationTextTMP.text = "YOU DID GREAT!";
+            BadImage.SetActive(false);
+            RetryBtn.SetActive(false);
         }
         else
         {
             image.sprite = currentCustomer.sadFace;
+            notificationTextTMP.text = "OH NO!";
+            feedbackDialogueTMP.text = currentCustomer.badText;
+            GoodImage.SetActive(false);
+            NextBtn.SetActive(false);
         }
 
 
@@ -40,11 +57,10 @@ public class RewardSceneManager : MonoBehaviour
 
     bool matches(SnackData snack, CharacterData customer)
     {
-        Debug.Log("matching " + customer.characterName + " and " + snack.barcode);
 
         if (customer.characterName == "Benny The Biker")
         {
-            if (snack.sugar > 20)
+            if (snack.sugar < 20)
             {
                 return false;
             }
@@ -55,5 +71,16 @@ public class RewardSceneManager : MonoBehaviour
         }
         return false;
     }
+
+    public void retryClicked()
+    {
+        SceneManager.LoadScene("SnaxDetection");
+    }
+
+    public void nextClicked()
+    {
+        SceneManager.LoadScene("CustomersList");
+    }
+
 
 }

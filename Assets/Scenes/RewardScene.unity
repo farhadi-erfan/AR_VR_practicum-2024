@@ -1112,9 +1112,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CustomersListManager, Assembly-CSharp
-        m_MethodName: startShopping
+      - m_Target: {fileID: 1323181509}
+        m_TargetAssemblyTypeName: RewardSceneManager, Assembly-CSharp
+        m_MethodName: retryClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1492,6 +1492,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 689416990}
   feedbackDialogueTMP: {fileID: 68937720}
+  notificationTextTMP: {fileID: 847466353}
+  GoodImage: {fileID: 574993710}
+  BadImage: {fileID: 407638541}
+  NextBtn: {fileID: 1805419091}
+  RetryBtn: {fileID: 989443052}
 --- !u!1 &1773742245
 GameObject:
   m_ObjectHideFlags: 0
@@ -1650,9 +1655,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CustomersListManager, Assembly-CSharp
-        m_MethodName: startShopping
+      - m_Target: {fileID: 1323181509}
+        m_TargetAssemblyTypeName: RewardSceneManager, Assembly-CSharp
+        m_MethodName: nextClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

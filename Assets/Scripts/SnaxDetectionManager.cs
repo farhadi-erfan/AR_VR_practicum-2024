@@ -41,6 +41,9 @@ public class SnaxDetectionManager : MonoBehaviour
     public void inspectClicked()
     {
         Debug.Log("Inspect Clicked");
+        PlayerPrefs.SetString("CurrentCustomer", currentCustomer.characterName);
+        PlayerPrefs.SetString("InspectingSnackBarcode", currentSnack.barcode);
+        SceneManager.LoadScene("InspectScene");
     }
 
     public void buyClicked()
@@ -49,7 +52,6 @@ public class SnaxDetectionManager : MonoBehaviour
         PlayerPrefs.SetString("CurrentCustomer", currentCustomer.characterName);
         PlayerPrefs.SetString("CurrentSnackBarcode", currentSnack.barcode);
         SceneManager.LoadScene("RewardScene");
-
     }
 
     public void pauseClicked()

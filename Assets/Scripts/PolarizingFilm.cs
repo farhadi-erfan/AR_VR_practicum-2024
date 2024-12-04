@@ -7,6 +7,7 @@ using TMPro;
 
 public class PolarizingFilm : MonoBehaviour
 {
+    public bool interactable = true;
     public GameObject canvasObject;
     public Button button;
     public TMP_InputField inputField; // Add a reference to the input field
@@ -36,30 +37,35 @@ public class PolarizingFilm : MonoBehaviour
     {
         SetValue(_value);
 
-        button.AddPointerDownUpListener(() =>
+        if (interactable)
         {
-            ResetSliderTimer(); // Reset timer when button is clicked
-            DestroySlider();
-            AddSlider();
-            sliderInteractable.onValueChanged.AddListener(delegate
+
+
+
+            button.AddPointerDownUpListener(() =>
             {
-                _value = sliderInteractable.value; 
-                SetValue(_value);
-                string typeOfTasteText = typeOfTaste.GetComponent<TextMeshPro>().text;
-                slider.transform.Find("Text").GetComponent<TextMeshProUGUI>().SetText($"{typeOfTasteText} = {_value}");
-                ResetSliderTimer();// Reset timer when button is clicked
+                ResetSliderTimer(); // Reset timer when button is clicked
+                DestroySlider();
+                AddSlider();
+                sliderInteractable.onValueChanged.AddListener(delegate
+                {
+                    _value = sliderInteractable.value;
+                    SetValue(_value);
+                    string typeOfTasteText = typeOfTaste.GetComponent<TextMeshPro>().text;
+                    slider.transform.Find("Text").GetComponent<TextMeshProUGUI>().SetText($"{typeOfTasteText} = {_value}");
+                    ResetSliderTimer();// Reset timer when button is clicked
+                });
             });
-        });
 
-        button.AddLongPressListener(() =>
-        {
-            //ResetSliderTimer(); // Reset timer when button is clicked
-            // Show the input field and set its text to the current typeOfTaste
-            inputField.gameObject.SetActive(true);
-            inputField.text = typeOfTaste.GetComponent<TextMeshPro>().text;
-            inputField.onEndEdit.AddListener(UpdateTypeOfTaste);
-        });
-
+            button.AddLongPressListener(() =>
+            {
+                //ResetSliderTimer(); // Reset timer when button is clicked
+                // Show the input field and set its text to the current typeOfTaste
+                inputField.gameObject.SetActive(true);
+                inputField.text = typeOfTaste.GetComponent<TextMeshPro>().text;
+                inputField.onEndEdit.AddListener(UpdateTypeOfTaste);
+            });
+        }
         StartSliderDisappearTimer();
     }
 
@@ -70,7 +76,7 @@ public class PolarizingFilm : MonoBehaviour
         {
             Vector3 mousePosition = Input.mousePosition;
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(mousePosition), Vector2.zero);
-            
+
             // Check if user interacts with slider or its UI components
             if (hit.collider != null && hit.collider.gameObject == slider)
             {
@@ -152,5 +158,5 @@ public class PolarizingFilm : MonoBehaviour
         inputField.gameObject.SetActive(false); // Hide the input field after editing
         inputField.onEndEdit.RemoveListener(UpdateTypeOfTaste); // Remove the listener to prevent multiple additions
     }
-    
+
 }

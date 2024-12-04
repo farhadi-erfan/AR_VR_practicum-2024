@@ -21,9 +21,9 @@ public class SimpleBarcodeScanner : MonoBehaviour
         if (mBarcodeBehaviour != null && mBarcodeBehaviour.InstanceData != null)
         {
             string barcode = mBarcodeBehaviour.InstanceData.Text.Trim();
-            Debug.Log(barcode);
-            Debug.Log($"Raw barcode: '{mBarcodeBehaviour.InstanceData.Text}'");
-            Debug.Log($"Trimmed barcode: '{barcode}'");
+            //Debug.Log(barcode);
+            //Debug.Log($"Raw barcode: '{mBarcodeBehaviour.InstanceData.Text}'");
+            //Debug.Log($"Trimmed barcode: '{barcode}'");
 
             snaxDetectionManager.barcodeDetected(barcode);
 

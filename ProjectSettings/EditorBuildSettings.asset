@@ -41,6 +41,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RewardScene.unity
     guid: 68c05fef771bbfc4993ec82c3a23ff41
+  - enabled: 1
+    path: Assets/Scenes/InspectScene.unity
+    guid: 9cd4d3171c733d14da0e312160560164
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 7b3e706f360be3b49a0a47e5639b8b36, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: d43cb59e9e52cb2429d665f5b8a573da, type: 2}

@@ -11,6 +11,12 @@ public class SnackData : ScriptableObject
     public float sugar;
     public float fat;
     public float energy;
+
+    public float normalizedSodium;
+    public float normalizedSugar;
+    public float normalizedFat;
+    public float NormalizedEnergy;
+
     public Sprite snackImage; 
 
     void Start()

@@ -15,6 +15,8 @@ public class CharacterData : ScriptableObject
     public Sprite normalFace;
     public Sprite happyFace;
     public Sprite sadFace;
+    public string goodText;
+    public string badText;
 
     // Start is called before the first frame update
     void Start()

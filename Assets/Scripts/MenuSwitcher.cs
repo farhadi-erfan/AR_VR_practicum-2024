@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MenuSwitcher : MonoBehaviour
@@ -64,5 +65,11 @@ public class MenuSwitcher : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene("CustomersList");
+    }
+
+    public void resetData()
+    {
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.Save();
     }
 }

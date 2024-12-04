@@ -41,9 +41,11 @@ public class CustomersListManager : MonoBehaviour
         }
         else
         {
+            secondCustomer = remaining[1];
             thirdCustomer = remaining[2];
         }
         currentCustomer = remaining[0];
+
         updateUI();
     }
 

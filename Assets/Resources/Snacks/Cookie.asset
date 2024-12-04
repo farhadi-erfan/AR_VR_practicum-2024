@@ -12,10 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1851a14fc420dd478deaa360a2e22e7, type: 3}
   m_Name: Cookie
   m_EditorClassIdentifier: 
-  snackName: 
-  barcode: 
-  sodium: 0
-  sugar: 0
-  fat: 0
-  energy: 0
-  snackImage: {fileID: 0}
+  snackName: Cookie
+  barcode: 3811
+  sodium: 43
+  sugar: 50
+  fat: 25
+  energy: 440
+  normalizedSodium: 0.3
+  normalizedSugar: 0.7
+  normalizedFat: 0.25
+  NormalizedEnergy: 110
+  snackImage: {fileID: 21300000, guid: b77f4e49ab5839d469a98e66c5e1fc79, type: 3}

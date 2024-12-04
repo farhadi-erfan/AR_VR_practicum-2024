@@ -60,7 +60,18 @@ public class RewardSceneManager : MonoBehaviour
 
         if (customer.characterName == "Benny The Biker")
         {
-            if (snack.sugar < 20)
+            if (snack.sugar > 31) // Twinkies
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        else if (customer.characterName == "Mr.Pickle The Pickle")
+        {
+            if (snack.sodium < 350)  //Twinkies
             {
                 return false;
             }
@@ -69,6 +80,36 @@ public class RewardSceneManager : MonoBehaviour
                 return true;
             }
         }
+        else if (customer.characterName == "Tommy The Teacher")
+        {
+            if (snack.energy > 250 && snack.sugar <32) // protein bar
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+            
+        }
+        else if (customer.characterName == "Penny The Police Officer")
+        {
+            // if ( fill with optido conditions ) 
+            // {
+            //     return true;
+            // }
+           
+        }
+        else if (customer.characterName == "Molly The Musician")
+        {
+            // if (filled with optido conditions)
+            // {
+            //     return true;
+            // }
+           
+            
+        }
+        
         return false;
     }
 

@@ -159,4 +159,9 @@ public class PolarizingFilm : MonoBehaviour
         inputField.onEndEdit.RemoveListener(UpdateTypeOfTaste); // Remove the listener to prevent multiple additions
     }
 
+    public void SetFixedValue(float val) {
+        _value = val;
+        SetValue(val);
+    }
+
 }

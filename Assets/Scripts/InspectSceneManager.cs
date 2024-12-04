@@ -15,11 +15,11 @@ public class InspectSceneManager : MonoBehaviour
     public PolarizingFilm snackSodium;
     public PolarizingFilm snackFat;
 
-    public PolarizingFilm customerSugarTolerance;
-    public PolarizingFilm customerSodiumTolerance;
-    public PolarizingFilm customerFatTolerance;
+    public PolarizingFilm customerSugarSensitivity;
+    public PolarizingFilm customerSodiumSensitivity;
+    public PolarizingFilm customerFatSensitivity;
 
-
+    private DesignerModeScreen designerModeScreen;
     private SnackManager snackManager;
     private CharacterManager characterManager;
     SnackData currentSnack;
@@ -41,16 +41,25 @@ public class InspectSceneManager : MonoBehaviour
         userImage.sprite = currentCustomer.normalFace;
         snackImage.sprite = currentSnack.snackImage;
 
-        snackSugar.SetValue(currentSnack.normalizedSugar);
-        Debug.Log(currentSnack.normalizedSugar);
-        snackSodium.SetValue(currentSnack.normalizedSodium);
-        Debug.Log(currentSnack.normalizedSodium);
-        snackFat.SetValue(currentSnack.normalizedFat);
-        Debug.Log(currentSnack.normalizedFat);
+        snackSugar.SetFixedValue(currentSnack.normalizedSugar);
+        snackSodium.SetFixedValue(currentSnack.normalizedSodium);
+        snackFat.SetFixedValue(currentSnack.normalizedFat);
 
-        customerSugarTolerance.SetValue(currentCustomer.sugarTolerance);
-        customerSodiumTolerance.SetValue(currentCustomer.sodiumTolerance);
-        customerFatTolerance.SetValue(currentCustomer.fatTolerance);
+        customerSugarSensitivity.SetFixedValue(currentCustomer.sugarSensitivity);
+        customerSodiumSensitivity.SetFixedValue(currentCustomer.sodiumSensitivity);
+        customerFatSensitivity.SetFixedValue(currentCustomer.fatSensitivity);
+
+        Debug.Log("inspect scene updated values of films");
+
+        designerModeScreen = FindFirstObjectByType<DesignerModeScreen>();
+        designerModeScreen.a1 = currentCustomer.sugarSensitivity;
+        designerModeScreen.a2 = currentCustomer.sodiumSensitivity;
+        designerModeScreen.a3 = currentCustomer.fatSensitivity;
+
+        designerModeScreen.b1 = currentSnack.normalizedSugar;
+        designerModeScreen.b2 = currentSnack.normalizedSodium;
+        designerModeScreen.b3 = currentSnack.normalizedFat;
+
     }
 
     public void backClicked()

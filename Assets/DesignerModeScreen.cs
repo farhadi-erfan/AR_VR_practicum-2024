@@ -1,4 +1,4 @@
- using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -257,6 +257,7 @@ public class DesignerModeScreen : MonoBehaviour
         originalScalePart1_2 = greenLightBeamPart1_2.transform.localScale;
         originalScalePart1_3 = greenLightBeamPart1_3.transform.localScale;
         originalScalePart2 = greenLightBeamPart2.transform.localScale;
+
     }
 
     // Update is called once per frame
@@ -371,7 +372,7 @@ public class DesignerModeScreen : MonoBehaviour
         float newDiameterRight1Part1_3 = CalculateNewDiameter((a5) * (b5), originalScalePart1_3.x);
         float newDiameterLeft2Part1_3 = CalculateNewDiameter((a6) * (b6), originalScalePart1_3.x);
         float newDiameterRight2Part1_3 = CalculateNewDiameter((a7) * (b7), originalScalePart1_3.x);
-        
+
 
         // Apply the new diameters to the respective cylinders
         UpdateCylinderDiameter(greenLightBeamPart1_2, newDiameterGreenPart1_2);
@@ -450,32 +451,39 @@ public class DesignerModeScreen : MonoBehaviour
         // }
         float totalAlpha = greenColorPart2.a + blueColorPart2.a + redColorPart2.a +
                             left1ColorPart2.a + right1ColorPart2.a + left2ColorPart2.a + right2ColorPart2.a;
-            float averageAlpha = totalAlpha / 3.2f;
-            float clampedAlpha = 0f;
-            if (averageAlpha < 0.1f){
-                clampedAlpha = Mathf.Min(1, Mathf.Max(0, averageAlpha));
-            } else{
-                clampedAlpha = Mathf.Min(1, Mathf.Max(0, averageAlpha + 0.4f));
-            }
+        float averageAlpha = totalAlpha / 3.2f;
+        float clampedAlpha = 0f;
+        if (averageAlpha < 0.1f)
+        {
+            clampedAlpha = Mathf.Min(1, Mathf.Max(0, averageAlpha));
+        }
+        else
+        {
+            clampedAlpha = Mathf.Min(1, Mathf.Max(0, averageAlpha + 0.4f));
+        }
 
-            // Clamp the average alpha value
-            //float clampedAlpha = Mathf.Min(1, Mathf.Max(0, averageAlpha - 0.3f));
-            //float clampedAlpha = Mathf.Min(1, Mathf.Max(0, averageAlpha + 0.3f));
+        // Clamp the average alpha value
+        //float clampedAlpha = Mathf.Min(1, Mathf.Max(0, averageAlpha - 0.3f));
+        //float clampedAlpha = Mathf.Min(1, Mathf.Max(0, averageAlpha + 0.3f));
 
-            // Change the color of lightDot
-            //Color lightdotColor = lightDot.color;
-            lightdotColor.a = clampedAlpha;
-            lightDot.color = lightdotColor;
+        // Change the color of lightDot
+        //Color lightdotColor = lightDot.color;
+        lightdotColor.a = clampedAlpha;
+        lightDot.color = lightdotColor;
 
-            // Change the color of itemImage
-            //Color itemImageColor = itemImage.color;
-            itemImageColor.a = clampedAlpha;
-            itemImage.color = itemImageColor;  
+        // Change the color of itemImage
+        //Color itemImageColor = itemImage.color;
+        itemImageColor.a = clampedAlpha;
+        itemImage.color = itemImageColor;
+
+        // Debug.Log("value: " + value + " alpha: " + alpha + " clamped alpha: " + clampedAlpha);
+        lightdotColor.a = Mathf.Min(1, value / 2.0f);
     }
 
     private float DotProduct(float a1, float a2, float a3, float a4, float a5, float a6, float a7, float b1, float b2, float b3, float b4, float b5, float b6, float b7)
     {
-        return (a1 * b1 + a2 * b2 + a3 * b3 + a4 * b4 + a5 * b5 + a6 * b6 + a7 * b7);
+        float result = (a1 * b1 + a2 * b2 + a3 * b3 + a4 * b4 + a5 * b5 + a6 * b6 + a7 * b7);
+        return result;
     }
 
     private void ChangeLightBeamColor(GameObject lightBeamPart, Color originalColor, float percentage)

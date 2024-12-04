@@ -9,9 +9,9 @@ public class CharacterData : ScriptableObject
     public string dialogue;
     public string condition;
     public string order;
-    public float sodiumTolerance;
-    public float sugarTolerance;
-    public float fatTolerance;
+    public float sodiumSensitivity;
+    public float sugarSensitivity;
+    public float fatSensitivity;
     public Sprite normalFace;
     public Sprite happyFace;
     public Sprite sadFace;

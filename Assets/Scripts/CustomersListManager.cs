@@ -26,7 +26,7 @@ public class CustomersListManager : MonoBehaviour
         List<CharacterData> remaining = characterManager.getRemainingCharacters();
         if (remaining.Count == 0)
         {
-            // TODO goto end.
+            SceneManager.LoadScene("FinalScene");
             return;
         }
         else if (remaining.Count == 1)
@@ -90,6 +90,11 @@ public class CustomersListManager : MonoBehaviour
     {
         PlayerPrefs.SetString("CurrentCustomer", currentCustomer.characterName);
         SceneManager.LoadScene("SnaxDetection");
+    }
+
+    public void backClicked()
+    {
+        SceneManager.LoadScene("Start Scene");
     }
 
 }

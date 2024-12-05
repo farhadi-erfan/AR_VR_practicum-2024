@@ -57,59 +57,72 @@ public class RewardSceneManager : MonoBehaviour
 
     bool matches(SnackData snack, CharacterData customer)
     {
+        if (customer.characterName == "Benny The Biker") {
+            if (snack.snackName == "Cookie" || snack.snackName == "Nut Bar") {
+                return true;
+            }
+        } else if (customer.characterName == "Molly The Musician") {
+            if (snack.snackName == "Fruit Snack") {
+                return true;
+            }
+        } else if (customer.characterName == "Mr.Pickle The Pickle") {
+            if (snack.snackName == "CheezIt") {
+                return true;
+            }
+        }
 
-        if (customer.characterName == "Benny The Biker")
-        {
-            if (snack.sugar > 31) // Twinkies
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-        else if (customer.characterName == "Mr.Pickle The Pickle")
-        {
-            if (snack.sodium < 350)  //Twinkies
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
-        }
-        else if (customer.characterName == "Tommy The Teacher")
-        {
-            if (snack.energy > 250 && snack.sugar <32) // protein bar
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-            
-        }
-        else if (customer.characterName == "Penny The Police Officer")
-        {
-            // if ( fill with optido conditions ) 
-            // {
-            //     return true;
-            // }
-           
-        }
-        else if (customer.characterName == "Molly The Musician")
-        {
-            // if (filled with optido conditions)
-            // {
-            //     return true;
-            // }
-           
-            
-        }
-        
+        //     if (customer.characterName == "Benny The Biker")
+        //     {
+        //         if (snack.sugar > 31) // Twinkies
+        //         {
+        //             return true;
+        //         }
+        //         else
+        //         {
+        //             return false;
+        //         }
+        //     }
+        //     else if (customer.characterName == "Mr.Pickle The Pickle")
+        //     {
+        //         if (snack.sodium < 350)  //Twinkies
+        //         {
+        //             return false;
+        //         }
+        //         else
+        //         {
+        //             return true;
+        //         }
+        //     }
+        //     else if (customer.characterName == "Tommy The Teacher")
+        //     {
+        //         if (snack.energy > 250 && snack.sugar <32) // protein bar
+        //         {
+        //             return true;
+        //         }
+        //         else
+        //         {
+        //             return false;
+        //         }
+
+        //     }
+        //     else if (customer.characterName == "Penny The Police Officer")
+        //     {
+        //         // if ( fill with optido conditions ) 
+        //         // {
+        //         //     return true;
+        //         // }
+
+        //     }
+        //     else if (customer.characterName == "Molly The Musician")
+        //     {
+        //         // if (filled with optido conditions)
+        //         // {
+        //         //     return true;
+        //         // }
+
+
+        //     }
+
         return false;
     }
 
@@ -121,6 +134,12 @@ public class RewardSceneManager : MonoBehaviour
     public void nextClicked()
     {
         SceneManager.LoadScene("CustomersList");
+        List<CharacterData> remaining = characterManager.getRemainingCharacters();
+        if (remaining.Count == 0)
+        {
+            SceneManager.LoadScene("FinalScene");
+            return;
+        }
     }
 
 

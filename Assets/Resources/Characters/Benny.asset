@@ -17,11 +17,15 @@ MonoBehaviour:
     Something gluten-free would be perfect!\""
   condition: Needs high-energy snacks but avoids gluten.
   order: High energy gluten-free snack
-  sodiumSensitivity: 0.36
-  sugarSensitivity: 0.9
-  fatSensitivity: 0.7
+  sodiumSensitivity: 0.13
+  sugarSensitivity: 0.98
+  fatSensitivity: 0.14
   normalFace: {fileID: 21300000, guid: ff9ee04a8b3ffe540962edb3d3de227c, type: 3}
   happyFace: {fileID: 21300000, guid: 3d6151c665dd1e444acb78195a034d60, type: 3}
-  sadFace: {fileID: 0}
-  goodText: 
-  badText: 
+  sadFace: {fileID: 21300000, guid: 2637ea7d7493e8c4db28935ad4b9592b, type: 3}
+  goodText: "\u201CNow that\u2019s more like it! This snack\u2019s got me ready to
+    hit the road again. Crunchy, satisfying, and just the right amount of fuel to
+    keep me pedaling\u2014let\u2019s go!\u201D \u200D\U0001F34F"
+  badText: "\u201CWhoa, this isn\u2019t what I needed! Way too sweet for a long ride.
+    I\u2019m gonna be sluggish now\u2014next time, something with a bit more bite,
+    please!\u201D \u2642"

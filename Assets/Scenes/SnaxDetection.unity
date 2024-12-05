@@ -341,6 +341,10 @@ MonoBehaviour:
   allSnacks:
   - {fileID: 11400000, guid: 26002c3f027d9b74bb3f255cf2723a06, type: 2}
   - {fileID: 11400000, guid: ea3521fbba8ef51469339f651cb0397d, type: 2}
+  - {fileID: 11400000, guid: 4390cf4562000954a867b64213b556a2, type: 2}
+  - {fileID: 11400000, guid: ba075f1c87362e849a9fa995444b13df, type: 2}
+  - {fileID: 11400000, guid: 7deae923cd77db046b544bf6adb5847c, type: 2}
+  - {fileID: 11400000, guid: 9e204319d7bc014439cc0daef4719def, type: 2}
 --- !u!114 &68116311
 MonoBehaviour:
   m_ObjectHideFlags: 0

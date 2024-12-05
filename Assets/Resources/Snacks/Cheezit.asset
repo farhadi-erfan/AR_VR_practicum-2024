@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1851a14fc420dd478deaa360a2e22e7, type: 3}
+  m_Name: Cheezit
+  m_EditorClassIdentifier: 
+  snackName: CheezIt
+  barcode: 024100123223
+  sodium: 430
+  sugar: 0
+  fat: 15
+  energy: 280
+  normalizedSodium: 0.7
+  normalizedSugar: 0
+  normalizedFat: 0.53
+  NormalizedEnergy: 280
+  snackImage: {fileID: 21300000, guid: 45f6b70fb09e66f4d859ba5a05ba934b, type: 3}

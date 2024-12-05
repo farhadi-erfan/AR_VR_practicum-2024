@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d92cdd647eea4c34fb7f4d13ed352835, type: 3}
+  m_Name: MrPickle
+  m_EditorClassIdentifier: 
+  characterName: Mr.Pickle The Pickle
+  dialogue: "\"Hey there! I\u2019m Mr. Pickle, and I live for all things salty! No
+    sugary stuff for me, just give me something that\u2019ll make my taste buds tingle!
+    Salty snacks are where it\u2019s at!\""
+  condition: Loves salty foods but can't stand anything sweet. Prefers snacks that
+    are savory and packed with flavor.
+  order: I need something crispy, salty, and crunchy!
+  sodiumSensitivity: 0.01
+  sugarSensitivity: 0.76
+  fatSensitivity: 0.12
+  normalFace: {fileID: 21300000, guid: 5a513c4a1fc396d4c84a34300e851c99, type: 3}
+  happyFace: {fileID: 21300000, guid: 8a562b380fda8da438b659b64d95dd24, type: 3}
+  sadFace: {fileID: 21300000, guid: a9624ed1fbf0b39488eda279ecba19c5, type: 3}
+  goodText: "\u201CAh, now that\u2019s the perfect snack! Just the right amount of
+    salt\u2014this is exactly what I needed! You've really got my taste buds dancing!
+    Well done!\""
+  badText: "\u201COh no, what is this? This is way too sweet! My taste buds are not
+    happy right now. I guess I\u2019ll have to stick with my pickles next time!\u201D"

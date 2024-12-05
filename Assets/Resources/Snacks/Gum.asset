@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1851a14fc420dd478deaa360a2e22e7, type: 3}
+  m_Name: Gum
+  m_EditorClassIdentifier: 
+  snackName: Orbit Gum
+  barcode: 02248808
+  sodium: 0
+  sugar: 0
+  fat: 0
+  energy: 4
+  normalizedSodium: 0
+  normalizedSugar: 0
+  normalizedFat: 0
+  NormalizedEnergy: 4
+  snackImage: {fileID: 21300000, guid: e9e8703dc72cd63418195226790a3c7f, type: 3}
